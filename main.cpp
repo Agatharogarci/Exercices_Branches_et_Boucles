@@ -53,5 +53,24 @@ int main() {
 
         // Exercice 1.4 ------------------------------------------------
 
-
+    char touche = 'z';
+    std::cin >> touche;
+    switch (touche)
+    {
+        case 'z':
+            std::println("Avancer");
+            break;
+        case 's':
+            std::println("Reculer");
+            break;
+        case 'q':
+            std::println("Gauche");
+            break;
+        case 'd':
+            std::println("Droite");
+            break;
+        default:
+            std::println("Touche inconnue");
+            break;
+    }
 }
