@@ -28,11 +28,30 @@ int main() {
         std::println("impair");
 
     }
+    // Exercice 1.3 -----------------------------------------
+
+    int points_de_vie = 0;
+
+    if (points_de_vie >= 75)
+    {
+        std::println("Intact!");
+    }
+    else if (points_de_vie < 75 && points_de_vie > 41)
+    {
+        std::println("Egratigne...");
+    }
+    else if (points_de_vie < 41 && points_de_vie > 1)
+    {
+        std::println("Critique!!");
+    }
+    if (points_de_vie <= 0)
+    {
+        std::println("Game Over");
+
+    }
 
 
-
-
-
+        // Exercice 1.4 ------------------------------------------------
 
 
 }
