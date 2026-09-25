@@ -70,7 +70,23 @@ int main() {
             std::println("Droite");
             break;
         default:
-            std::println("Touche inconnue");
+            std::println("Touche inconnue ");
             break;
     }
+    // Exercice 1.5 ----------------------------------------
+
+    int countdown = 10;
+    do
+    {
+        std::println("{}", countdown);
+        countdown--;
+    }while (countdown > 0);
+
+    std::println("Decollage!");
+
+
+
+
+
+
 }
