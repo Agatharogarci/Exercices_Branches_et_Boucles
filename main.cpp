@@ -135,9 +135,60 @@ int main() {
     int multiplicateur = 1;
 
    for (multiplicateur = 1; multiplicateur <= 10; multiplicateur++)
+   {
        std::println("7 x {} = {}", multiplicateur, multiplicateur * 7);
        std::println("----------------");
+   }
+
     for (multiplicateur = 10; multiplicateur >= 1; multiplicateur--)
+    {
         std::println("7 x {} = {}", multiplicateur, multiplicateur * 7);
+        std::println("----------------");
+    }
+
+
+
+    //Exercice 1.8 -------------------------------------------
+    // Afficher les nombres de 1 à 100, mais s'arrêter dès qu'on en trouve un divisible par 17.
+    int number = 1;
+
+        for (number = 1; number <= 100; number++)
+        {
+            std::println("{}", number);
+
+            if (number % 17 == 0)
+            {
+                std::println("-----------");
+                std::println("Le nombre {} est divisible par 17", number);
+                std::println("-----------");
+                break;
+            }
+        }
+
+    //Afficher les nombres de 1 à 30 en sautant les multiples de 3.
+
+        int number2 = 1;
+    for (number2 = 1; number2 <= 30; number2++) {
+        if (number2 % 3 == 0)
+        {
+            continue;
+
+        }
+        std::println("{}", number2);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     return 0;
 }
