@@ -10,6 +10,10 @@ int main() {
     if (pv <= 0)
     {
         std::println("Game Over");
+    }else
+    {
+        std::println("Toujours vivant");
+
     }
 
     // Exercice 1.2 --------------------------------------------------
@@ -52,9 +56,12 @@ int main() {
 
 
         // Exercice 1.4 ------------------------------------------------
-
+// si on enleve un break par exemple sur le premier case dans ce cas si on tape 'z'
+// la console nous dira avancer et reculer
     char touche = 'z';
+    std::print("Que voulez vous faire? 'z': Avancer 's':Reculer 'q': Gauche 'd': Droite");
     std::cin >> touche;
+
     switch (touche)
     {
         case 'z':
@@ -76,17 +83,33 @@ int main() {
     // Exercice 1.5 ----------------------------------------
 
     int countdown = 10;
+
+    std::string countdownYesOrNo;
+
+
     do
     {
-        std::println("{}", countdown);
-        countdown--;
-    }while (countdown > 0);
+        std::println("Voulez vous lancer le compte a rebours?[Yes/No]");
 
-    std::println("Decollage!");
+        std::cin >> countdownYesOrNo;
+
+        if (countdownYesOrNo == "Yes" || countdownYesOrNo == "yes" || countdownYesOrNo == "y") {
+            std::println("Compte a rebours lance:");
+
+            do
+            {
+                std::println("{}", countdown);
+                countdown--;
+            }while (countdown > 0);
+
+            std::println("Decollage!");
+            break;
+        }else if (countdownYesOrNo == "No" || countdownYesOrNo == "no" || countdownYesOrNo == "n") {
+        }
+    }while (true);
 
 
 
 
-
-
+    return 0;
 }
