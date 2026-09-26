@@ -108,7 +108,23 @@ int main() {
         }
     }while (true);
 
+    //Exercice 1.6 -------------------------------------------
 
+    int choix = 0;
+
+    do
+    {
+        std::println("Choisis un chiffre entre 1 et 3:");
+        std::cin >> choix;
+        if (choix == 1 || choix == 2 || choix == 3)
+        {
+            std::println("Merci!");
+            break;
+        }else {
+            std::println("Chiffre non reconnu");
+        }
+
+    }while (true);
 
 
     return 0;
