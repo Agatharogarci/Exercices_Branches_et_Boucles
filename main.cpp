@@ -123,7 +123,11 @@ int main() {
         }else {
             std::println("Chiffre non reconnu");
         }
-
+//Question : pourquoi un do … while plutôt qu'un while ? Que faudrait-il écrire en plus avec un while ?
+// Réponse: on utilise un do while plutôt qu'un while pour que le code se lance automatiquement au moins une fois
+// si on utilise un while on devrait mettre avant ce while un std::println("choisir un chiffre entre 1 et 3") puis le
+// std::cin >> choix pour lancer la boucle une premiere fois puis on devrait répeter ça dans le while pour que la boucle
+// ne s'arrete que si on choisi le bon chiffre
     }while (true);
 
 
