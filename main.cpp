@@ -130,6 +130,14 @@ int main() {
 // ne s'arrete que si on choisi le bon chiffre
     }while (true);
 
+    //Exercice 1.7 -------------------------------------------
 
+    int multiplicateur = 1;
+
+   for (multiplicateur = 1; multiplicateur <= 10; multiplicateur++)
+       std::println("7 x {} = {}", multiplicateur, multiplicateur * 7);
+       std::println("----------------");
+    for (multiplicateur = 10; multiplicateur >= 1; multiplicateur--)
+        std::println("7 x {} = {}", multiplicateur, multiplicateur * 7);
     return 0;
 }
